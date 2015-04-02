@@ -12,7 +12,7 @@ I know it is a little slow (but totes worth it!!!!)... _Do you know how I can ma
 
 Well, I got some requirements from marketing to make sure we distinguish between published and unpublished posts. I made some changes to the html and css.
 
-But now QA is telling me I have some security vulnerabilities! They were able to use the strings below to hack my site!!!
+But now security auditors are telling me I have some security vulnerabilities! They were able to use the strings below to hack my site!!!
 
 What do I do to fix it???
 
