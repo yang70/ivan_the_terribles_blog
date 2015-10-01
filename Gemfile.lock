@@ -35,6 +35,17 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    brakeman (3.1.1)
+      erubis (~> 2.6)
+      fastercsv (~> 1.5)
+      haml (>= 3.0, < 5.0)
+      highline (~> 1.6)
+      multi_json (~> 1.2)
+      ruby2ruby (>= 2.1.1, < 2.3.0)
+      ruby_parser (~> 3.7.0)
+      sass (~> 3.0)
+      slim (>= 1.3.6, < 4.0)
+      terminal-table (~> 1.4)
     builder (3.0.4)
     coderay (1.1.0)
     coffee-rails (3.2.2)
@@ -50,6 +61,10 @@ GEM
     execjs (2.2.2)
     faker (1.4.3)
       i18n (~> 0.5)
+    fastercsv (1.5.5)
+    haml (4.0.7)
+      tilt
+    highline (1.7.7)
     hike (1.2.3)
     hirb (0.7.2)
     i18n (0.6.11)
@@ -121,17 +136,28 @@ GEM
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
     ruby-prof (0.15.1)
+    ruby2ruby (2.2.0)
+      ruby_parser (~> 3.1)
+      sexp_processor (~> 4.0)
+    ruby_parser (3.7.1)
+      sexp_processor (~> 4.1)
     sass (3.4.6)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    sexp_processor (4.6.0)
+    slim (3.0.6)
+      temple (~> 0.7.3)
+      tilt (>= 1.3.3, < 2.1)
     slop (3.6.0)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    temple (0.7.6)
+    terminal-table (1.5.2)
     test-unit (3.0.2)
       power_assert
     thor (0.19.1)
@@ -151,6 +177,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  brakeman
   coffee-rails (~> 3.2.1)
   faker
   hirb
@@ -165,3 +192,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   test-unit
   uglifier (>= 1.0.3)
+
+BUNDLED WITH
+   1.10.6
