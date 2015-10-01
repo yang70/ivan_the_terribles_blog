@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   attr_accessible :body, :title, :published
   has_many :comments, dependent: :destroy
+  include ActiveModel::ForbiddenAttributesProtection
 
   def publish_status
     published? ? "published" : "unpublished"
@@ -9,7 +10,7 @@ class Post < ActiveRecord::Base
   def self.search(search)
     if search
       search.strip
-      includes(comments: :replies).where("title like '%#{search}%'")
+      includes(comments: :replies).where("title like ?", "%#{search}%")
     else
       includes(comments: :replies).order("updated_at DESC")
     end
