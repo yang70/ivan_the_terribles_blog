@@ -1,7 +1,6 @@
 class Post < ActiveRecord::Base
   attr_accessible :body, :title, :published
   has_many :comments, dependent: :destroy
-  include ActiveModel::ForbiddenAttributesProtection
 
   def publish_status
     published? ? "published" : "unpublished"
