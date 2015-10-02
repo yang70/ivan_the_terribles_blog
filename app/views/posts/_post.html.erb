@@ -1,6 +1,6 @@
-<%= content_tag :section, class: "post #{post.publish_status}" do %>
-  <h2>Post <%= "#{post.id}: #{post.title}" %></h2>
-  <div class="post"><%= post.body %></div>
+<%= content_tag :section, class: "post #{sanitize(post.publish_status)}" do %>
+  <h2>Post <%= "#{post.id}: #{sanitize(post.title)}" %></h2>
+  <div class="post"><%= sanitize(post.body) %></div>
   <%= render 'post_nav', post: post %>
   <%#= render post.comments %>
 <% end %>
