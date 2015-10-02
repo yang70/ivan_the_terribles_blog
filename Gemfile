@@ -4,6 +4,7 @@ gem 'rails', '~> 3.2.13'
 
 gem 'pg'
 gem 'kaminari'
+gem 'dotenv-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

@@ -4,8 +4,8 @@
 Application path: /Users/yang70/Dropbox/da_assignments/ivan_the_terribles_blog
 Rails version: 3.2.19
 Brakeman version: 3.1.1
-Started at 2015-10-01 14:03:30 -0700
-Duration: 0.450827 seconds
+Started at 2015-10-01 17:03:30 -0700
+Duration: 0.455321 seconds
 Checks run: BasicAuth, ContentTag, CreateWith, CrossSiteScripting, DefaultRoutes, Deserialize, DetailedExceptions, DigestDoS, EscapeFunction, Evaluation, Execute, FileAccess, FileDisclosure, FilterSkipping, ForgerySetting, HeaderDoS, I18nXSS, JRubyXML, JSONEncoding, JSONParsing, LinkTo, LinkToHref, MailTo, MassAssignment, ModelAttrAccessible, ModelAttributes, ModelSerialize, NestedAttributes, NumberToCurrency, QuoteTableName, Redirect, RegexDoS, Render, RenderDoS, RenderInline, ResponseSplitting, SQL, SQLCVEs, SSLVerify, SafeBufferManipulation, SanitizeMethods, SelectTag, SelectVulnerability, Send, SendFile, SessionManipulation, SessionSettings, SimpleFormat, SingleQuotes, SkipBeforeFilter, StripTags, SymbolDoSCVE, TranslateBug, UnsafeReflection, ValidationRegex, WithoutProtection, XMLDoS, YAMLParsing
 
 
@@ -32,19 +32,19 @@ Checks run: BasicAuth, ContentTag, CreateWith, CrossSiteScripting, DefaultRoutes
 
 +SECURITY WARNINGS+
 
-+------------+-------+--------+-------------------+----------------------------------------------------------------------------------------->>
-| Confidence | Class | Method | Warning Type      | Message                                                                                 >>
-+------------+-------+--------+-------------------+----------------------------------------------------------------------------------------->>
-| High       |       |        | Session Setting   | Session secret should not be included in version control near line 7                    >>
-| Medium     |       |        | Denial of Service | Rails 3.2.19 is vulnerable to denial of service via XML parsing (CVE-2015-3227). Upgrade>>
-+------------+-------+--------+-------------------+----------------------------------------------------------------------------------------->>
++------------+-------+--------+-------------------+------------------------------------------------>>
+| Confidence | Class | Method | Warning Type      | Message                                        >>
++------------+-------+--------+-------------------+------------------------------------------------>>
+| High       |       |        | Session Setting   | Session secret should not be included in versio>>
+| Medium     |       |        | Denial of Service | Rails 3.2.19 is vulnerable to denial of service>>
++------------+-------+--------+-------------------+------------------------------------------------>>
 
 
 View Warnings:
 
-+------------+-------------------------------------+---------------------+------------------------------------------------------------------>>
-| Confidence | Template                            | Warning Type        | Message                                                          >>
-+------------+-------------------------------------+---------------------+------------------------------------------------------------------>>
-| Weak       | posts/index (PostsController#index) | Dynamic Render Path | Render path contains parameter value near line 4: render(action =>>
-+------------+-------------------------------------+---------------------+------------------------------------------------------------------>>
++------------+-------------------------------------+---------------------+------------------------->>
+| Confidence | Template                            | Warning Type        | Message                 >>
++------------+-------------------------------------+---------------------+------------------------->>
+| Weak       | posts/index (PostsController#index) | Dynamic Render Path | Render path contains par>>
++------------+-------------------------------------+---------------------+------------------------->>
 
