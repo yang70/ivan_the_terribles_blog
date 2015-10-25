@@ -22,7 +22,7 @@ end
 
 group :test do
   gem 'ruby-prof'
-  gem 'test-unit'
+  gem 'test-unit', '~> 3.0'
 end
 
 group :development do
