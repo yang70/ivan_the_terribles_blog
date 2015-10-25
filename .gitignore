@@ -25,4 +25,5 @@ __eclim_temp_Vagrantfile
 config/application.yml
 brakeman_report.html
 
+# Ignore .env
 .env
