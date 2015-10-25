@@ -24,3 +24,6 @@ __eclim_temp_Vagrantfile
 .rspec
 config/application.yml
 brakeman_report.html
+
+# Ignore .env
+.env
