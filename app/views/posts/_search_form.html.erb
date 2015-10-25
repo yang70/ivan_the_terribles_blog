@@ -16,6 +16,6 @@
   </p>
 <% end %>
 </section>
-<%= content_tag :div, "data-#{sanitize(params[:status])}" => true do %>
-  Now showing <%= sanitize(params[:status]) %> results below:
+<%= content_tag :div, "data-#{params[:status]}" => true do %>
+  Now showing <%= params[:status] %> results below:
 <% end -%>
