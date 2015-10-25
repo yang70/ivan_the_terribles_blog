@@ -6,6 +6,7 @@ gem 'pg'
 gem 'rails', '~> 3.2.13'
 gem 'rack-mini-profiler'
 gem 'will_paginate', '~> 3.0.6'
+gem 'test-unit', '~> 3.0'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
