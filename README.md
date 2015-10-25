@@ -1,4 +1,4 @@
-# Data Structures - An exercise exploring basic data structure types in Ruby
+# Fix the Terrible Blog - Security Holes
 
 By [Matthew Yang](http://www.matthewgyang.com).
 
