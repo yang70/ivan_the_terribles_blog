@@ -1,28 +1,31 @@
 <h1>Ivan the Terrible's Blog</h1>
 
 <section class="blog">
+  <%= link_to 'New Post', new_post_path %>
+  <br />
   <% @posts.each do |post| %>
     <section class="post">
       <h2>Post <%= "#{post.id}: #{post.title}" %></h2>
       <div class="post"><%= post.body %></div>
-        <%= render 'post_nav', post: post %>
+        <div class="post_nav">
+          <%= link_to 'Show', post %> |
+          <%= link_to 'Edit', edit_post_path(post) %> |
+          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
         <% post.comments.each do |comment| %>
           <div class="comment">
             <h3>Comment <%= comment.id %>:</h3>
             <p><%= comment.body %></p>
-              <div class="reply">
-                <%= comment.replies.each do |reply| %>
+            <div class="reply">
+              <%= comment.replies.each do |reply| %>
                   <h4>Reply <%= reply.id %>:</h4>
                   <p><%= reply.body %></p>
-                <% end %>
-              </div>
+              <% end %>
+            </div>
           </div>
         <% end %>
       </div>
     </section>
   <% end %>
+  <%= will_paginate @posts %>
 </section>
-
-<br />
-
-<%= link_to 'New Post', new_post_path %>

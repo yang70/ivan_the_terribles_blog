@@ -2,6 +2,10 @@
   <h3>Comment <%= comment.id %>:</h3>
   <p><%= comment.body %></p>
   <div class="reply">
-    <%= render comment.replies %>
+    <% comment.replies.each do |reply| %>
+      <% cache reply do %>
+        <%= render reply %>
+      <% end %>
+    <% end %>
   </div>
 </div>

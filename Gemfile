@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '~> 3.2.13'
 gem 'rack-mini-profiler'
+gem 'will_paginate', '~> 3.0.6'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
